@@ -1,9 +1,8 @@
-cargo-features = ["edition2024"]
-
 [package]
 name = "the-white-flat"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+tokio = { version = "1.41.1", features = ["full"] }
 sqlx = { version = "0.8.2", features = [ "runtime-tokio", "tls-native-tls" ] }
